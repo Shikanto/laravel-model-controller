@@ -9,11 +9,11 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <h1 class= "text-center">TOP 10 FILM BOOLEAN</h1>
-        <div class="container d-flex flex-wrap gap-3 justify-content-center">
-        @foreach ($movie as $info_movie)
-        <div class="card text-center" style="width: 18rem;">
+    @include('partials/the_header')
+    
+    <div class="container d-flex flex-wrap my-5 p-5">
+    @foreach ($movie as $info_movie)
+        <div class="card text-center">
             <div class="card-body">
                 <h6>titolo</h6>
                 <h1 class="card-title">{{$info_movie['title']}}</h1>
@@ -26,8 +26,8 @@
                 <a href="https://it.wikipedia.org/wiki/{{$info_movie['title']}}" class="btn btn-info">Check the full info Film</a>
             </div>
         </div>       
-        @endforeach
-        </div>
+    @endforeach
     </div>
+    
 </body>
 </html>

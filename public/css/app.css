@@ -4,6 +4,43 @@
 }
 
 h6 {
-  text-decoration: underline;
+  color: darkblue;
+}
+
+header {
+  background-color: black;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: 2px solid lightgrey;
+}
+
+header h1 {
+  font-size: 3.5rem;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.container {
+  background-color: darkgrey;
+  gap: 10px;
+}
+
+.card {
+  border: 2px whitesmoke solid;
+  background-color: lightgrey;
+  width: calc(20% - 10px);
+}
+
+.card h1,
+.card h2 {
+  border-bottom: 1px whitesmoke solid;
+  font-size: 1.8rem;
+}
+
+.btn {
+  color: white;
+  border: 2px solid black;
 }
 
